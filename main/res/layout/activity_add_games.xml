@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg3">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:text="开黑之旅，即刻启程!"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="#8F000000"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="50dp"
+                android:src="@drawable/id"
+                android:layout_marginRight="5dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="开 黑 i d ： "
+                android:textSize="20sp"
+                android:gravity="center"
+                android:textColor="#F0000000"/>
+
+            <EditText
+                android:id="@+id/et_gameid"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="请输入学习账号"
+                android:background="@drawable/editext_selector"
+                android:textSize="20sp"
+                android:textColor="#000000"
+                android:inputType="text"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:gravity="left|center"
+                android:maxLength="20"
+                android:paddingLeft="10dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="50dp"
+                android:src="@drawable/user"
+                android:layout_marginRight="5dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="开黑科目："
+                android:textSize="20sp"
+                android:gravity="center"
+                android:textColor="#000000"/>
+
+            <EditText
+                android:id="@+id/et_gamename"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="请输入学科名称"
+                android:background="@drawable/editext_selector"
+                android:textSize="20sp"
+                android:textColor="#000000"
+                android:inputType="text"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:gravity="left|center"
+                android:maxLength="20"
+                android:paddingLeft="10dp"/>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:id="@+id/tu"
+                android:layout_width="25dp"
+                android:layout_height="50dp"
+                android:src="@drawable/isbn"
+                android:layout_marginRight="5dp"/>
+
+            <TextView
+                android:id="@+id/tv"
+                android:layout_toRightOf="@+id/tu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="开黑计划："
+                android:textSize="20sp"
+                android:gravity="center"
+                android:textColor="#000000"/>
+
+            <EditText
+                android:id="@+id/et_gamenote"
+                android:layout_width="250dp"
+                android:layout_toRightOf="@+id/tv"
+                android:layout_height="match_parent"
+                android:hint="请输入学习计划"
+                android:background="@drawable/editext_selector"
+                android:textSize="20sp"
+                android:textColor="#000000"
+                android:inputType="text"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:gravity="left|center"
+                android:maxLength="6"
+                android:paddingLeft="10dp"/>
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_add"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="发布"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"
+            android:background="#F2022643"
+            android:layout_marginTop="10dp"/>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

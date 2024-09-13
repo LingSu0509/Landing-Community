@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg2"
+    tools:context=".BackActivity">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:gravity="center"
+        android:text="确定要退出登陆吗"
+        android:textSize="30sp"
+        android:textColor="#C8FFFFFF"/>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="248dp"
+        android:layout_height="248dp"
+        app:cardCornerRadius="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center">
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+
+            android:src="@drawable/logo2"
+            android:layout_gravity="center"/>
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_centerVertical="true">
+
+        <Button
+            android:id="@+id/bt_backfalse"
+            android:layout_width="170dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="10dp"
+            android:background="#CC530542"
+            android:text="继续卷"
+            android:textColor="#DFFFFFFF"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/bt_backtrue"
+            android:layout_width="170dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            android:background="#CC530542"
+            android:text="劳逸结合"
+            android:textColor="#DFFFFFFF"
+            android:textSize="20sp" />
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
